@@ -142,7 +142,8 @@ class _PinputState extends State<Pinput>
     if (_completed) {
       widget.onCompleted?.call(pin);
       _maybeValidateForm();
-      _maybeCloseKeyboard();
+        //----- Hailey 20240404 prevent unfocus for the Verify button
+      // _maybeCloseKeyboard();
     }
   }
 
